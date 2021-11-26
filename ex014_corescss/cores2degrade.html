@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>     
+        *{ /* Configurações gerais no CSS*/
+            height: 100%; /* Para o degrade ficar na pag toda quando for top ou bottom*/
+        }
+
+        body{
+            background-image: linear-gradient(to top, #0999DB 20%, red 60%, #003DA8);
+            /* linear-gradient recebe os parametros:
+            1 é a direção: to top, bottom, right, left ou usar em grau
+            2 é a primeira color (apos as colores tbm pode colocar as porcentagens que a cor será exibida)
+            3 é a segunda cor
+            4 e assim por diante
+            */
+            color: white
+
+        }
+   </style>
+</head>
+
+<body>
+    <h1>Mexendo com degrade</h1>
+
+    
+</body>
+</html>

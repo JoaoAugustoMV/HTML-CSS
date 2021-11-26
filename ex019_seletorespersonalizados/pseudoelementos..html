@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos</title>
+
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        a{ /*Seletor normal de tag*/
+            text-decoration: none
+        }
+        
+        a:visited{ /*:visited é um pseudoclasse de a
+            -Quando o link da tag já foi visitado
+            */
+            color:rgb(216, 27, 27);
+        }
+        a:hover{ /*:hover é um pseudoclasse de a
+            -Enquanto o mouse estiver em cima
+            */
+            text-decoration: underline;
+        }
+        a:active{ /*:active é uma pseudoclasse de a
+            -Quando clicar no link
+            */
+            color:rgb(6, 255, 213);
+        }
+
+        a::after{/* ::after é um PSEUDOELEMENTO
+            - após o conteudo da tag
+            */
+            content: '[link]';
+            color: darkgoldenrod;
+            text-decoration: none;
+        }
+
+        .social{ /*Seletor da classe 'social*/
+            background-color:rgb(108, 255, 108);
+        }
+
+        .social::before{ /* :: pseudoElemento da classe social
+            - Antes do conteudo
+            */ 
+            content: ' [Rede social]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+
+    <ul>
+        <li><a href="https://www.youtube.com/" target='_blank' class='social'>YouTube</a>
+
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target='_blank'>GitHub Guanabara</a>
+
+        <li><a href="https://web.whatsapp.com/" target="_blank" class='social'>WhatsApp</a>
+
+        <li><a href="https://www.apple.com/br/tv-home/" target='_blank'>AppleTV</a>
+    </ul>
+    
+    <h2>PseudoClasse</h2>
+        <p>Usado para mexer no seletor em estado ou evento especifico</p>
+    <h2>PseudoElmento</h2>
+        <p>Usado para mexer em uma parte especifica do elemento</p>
+</body>
+</html>

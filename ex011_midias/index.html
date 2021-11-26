@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<!--
+Imagens
+P = 300x300
+M = 700x700
+G = 1000x1000px
+-->
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Abra em dipositivos com telas de tamanho diferentes ou mude o tamanho da janela do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png"> <!-- Se a tela tiver até 750px, carraga a foto pequena-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png "> <!--Se a tela tiver até 1050px, carrega a foto media-->
+        <img src="imagens/foto_g.png" alt="Imagem flexivel"> <!--Portanto se tiver mais que 1050, carrega a foto grande--> 
+        <!-- A ordem tem que do menor pro maior!-->
+        <!--No caso, está usando a largura max, mas poderia ser a largura min, ou trabalhar com a altura    -->
+    </picture>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Jeito 1 de por Audio em HTML5</p>
+    <audio src="midias/teste.mp3" autoplay controls></audio>
+    
+    <p>Jeito 2 de por Audio em HTML5</p>
+    <audio controls preload="metadata">
+        <!--Sobre preload:
+        auto : vem default, carrega o audio todo automatico (n recomendado)
+        metadata: carrega algumas info sobre o audio(ex duração)
+        none: não carrega nada ate dar play
+        -->
+        <source src="midias/teste.mp3" type="audio/mpeg">
+
+    </audio>
+    <br> 
+    <a href="pagvideos.html">Avance para ver Videos</a>
+    
+</body>
+</html>

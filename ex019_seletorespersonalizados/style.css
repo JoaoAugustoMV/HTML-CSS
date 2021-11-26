@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*
+ Em HTML é id, em CSS é # (para um unico elemento) (até funciona com mais de 1 mas não é recomendado
+ Em HTML é class,  em CSS é . (para mais de um elemento)
+ 
+*/
+
+body{
+    background-color: rgb(250, 215, 151);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*Será aplicado a todos h1*/
+h1{
+    color: orange;
+}
+
+/*
+Será aplicado apenas nos h1 com o id = 'principal'
+a tag não é obrigatorio, mas acho melhor deixa QUANDO for id*/
+
+h1#principal{
+    text-align: center;
+    background-color: orange;
+    color: white;
+
+}
+
+
+h2{
+    color: rgb(173, 126, 39);
+}
+
+/* Classe
+    -   Colocar somente .nome pq, pode haver class de diferentes tag
+
+*/
+.basico{
+    color: red;
+}
+
+.intermediario{
+    /* será aplicado a classe inteira, independente da tag*/
+    color: rgb(252, 46, 46);
+}
+
+.avancado{
+    color: rgb(248, 114, 114);
+}
+p{
+    text-align: justify;
+}
+
+.destaque{
+    background-color: yellow;
+}

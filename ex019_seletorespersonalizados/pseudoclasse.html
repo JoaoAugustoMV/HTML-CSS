@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse em CSS</title>
+
+    <style>
+        div{
+            display: inline-block;
+            background-color: purple;
+            width: 200px;
+            height: 200px;
+        }
+
+        /*
+        div > p = p que está dentro da div
+        
+        */
+        div > p{ 
+            display: none;
+
+        }
+        /*
+        seletor:pseudoclasse
+        seletor:evento ou estado
+        */
+        div:hover{ /*Ao passar o mouse em cima*/
+            background-color: blue;
+        }
+
+        div:hover > p{ /*Ao passar o mouse em cima, afetará apenas o p que esta dentro da div*/
+            display: block;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>1
+        <p>Texto escondido</p>
+    </div>
+    <div>2</div>
+    <div>3</div>
+    
+</body>
+</html>

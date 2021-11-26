@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Ancoras</title>
+</head>
+<body>
+    <h1>Links</h1>
+        <h2>Links externos</h2> <!--Link que levam para outro site-->
+        <p>
+            Bora estudar
+            <ul> <!--a = Ancora e href = referencia de hipertexto-->
+                                                       <!--target='_blank' = abrir em uma nova janela-->
+                <li><a href="https://www.kaggle.com/learn" target="_blank" hreflanh='en' rel="external">Data Science</a></li>
+                                                                       <!--hreflang=lingua do site do link-->
+                <li><a href="https://newmoodle.recode.org.br/login/index.php">Desenvolvimento WEB</a></li>
+                <!--rel = indica para onde o link leva
+                next: prox pag do documento
+                prev: prox pag do documento
+                author: Mesmo site
+                external: Outro site
+                nofollow: vc não garante integridade neste link
+                -->
+                <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">
+                    GitHub do Curso em Video</a></li>
+
+            </ul>
+        </p>
+        
+        <h2>Links internos</h2> <!--Link do mesmo site, mas diferente pag-->
+        <p>
+            <a href="pag2.html">Para assistir, segui para proxima pag</a>
+        </p>
+
+        <h2>Link para Download</h2> <!--Dependendo do navegador, o comportamento pode mudar-->
+            <a href="baixar/pppbest.pdf" download="pppbest.pdf" type='application/pdf'>Arquivo PDF(N está funcionando)</a>
+            <a href="baixar/pppbest.rar">Arquivo ZIP</a>
+    
+</body>
+</html>

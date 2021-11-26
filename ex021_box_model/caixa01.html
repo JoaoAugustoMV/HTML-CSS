@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1{
+            background-color:lightcyan;
+            width: 300px;
+            height:300px;
+
+            
+            border: 5px solid darkred; /*ShortHand border: width style color*/
+            /*border-width:5px;
+            border-style:solid; Linha solida
+            border-color:darkred; 
+            */
+            padding: 10px 10px 10px 100px; /*ShortHand padding: top right bottom left
+                                Dica: Seguir o sentido horario
+                                Dica2: Quando for mesmo valor em todos, escrever apenas uma vez
+                                Dica3: padding: 20px 30px = cima e em baixo com 20, esquerda e direita com 30
+                                            */
+/*
+            margin:auto; Centralizar caixas*/
+/*          Fica centralizado tbm, pois a margem será auto na direita e esquerda, mas aqui é possivel configurar as margens de top e bottom
+  */          margin:30px auto 30px auto;
+            
+            
+            outline: 5px dotted rgb(34, 176, 219); /*ShortHand outline: width style color*/
+            /*
+            outline-width:5px;
+            outline-style:dotted; /*Linha solida
+            outline-color:rgb(34, 176, 219);
+            */
+        }
+        h2{
+            background-color:lightgreen;
+            border-width:3px;
+            border-style:dashed; /*Linha traceçada*/
+            border-color:lime;
+            padding: 20px;
+
+            margin: 30px 5px 50px 10px;
+        }
+        .box{
+            border-width:2px;
+            border-style:dotted; /*Linha traceçada*/
+            border-color:rgb(155, 211, 1);
+            margin: 30px;
+        }
+        .inline{
+            border-width:2px;
+            border-style:double; /*Linha traceçada*/
+            border-color:rgb(212, 140, 4);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Box model</h1>
+
+        <h2>Elementos das caixas</h2>
+            <ul>
+                <li>Altura ou height
+                <li>Largura ou width
+                <li>Borda ou border: Linha traçada em volta do conteudo
+                <li>Padding: espaço entre conteudo e a borda
+                <li>Margem ou margin: espaço entre o conteudo e outra caixa
+                <li>Outline: linha em volta da borda ou entre a borda e a margem
+            </ul>
+        <h2>Box-Level</h2>
+            <p>Começam em um linha separada, pulam linha e ocupam a largura inteira da tela
+                <ul class='box'>
+                    <li>h1 ... h5
+                    <li>p
+                    <li>div
+                </ul>
+            </p>
+        <h2>Inline-Level</h2>
+            <p>Não pulam linha e ocupam apenas o tamanho do conteudo, ex:
+                <ul class='inline'>
+                    <li>video
+                    <li>    <a href="#">tag a</a>
+                    <li>span
+
+                </ul>
+            </p>
+
+
+<p>Obs: user agent = navegador</p>
+</body>
+</html>

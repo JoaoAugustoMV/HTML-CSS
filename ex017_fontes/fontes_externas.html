@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+
+    <style>
+        /*
+        Fontes externas por API(sem download)
+        Neste caso sempre precisara estar conectado a internet, o que é obviamente necessario pra um site*/
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+        /*
+        Fontes externas com download
+        */
+        @font-face {
+            font-family: 'Enchanted Land'; /*Definir o nome da fonte*/
+            /*Há outros formatos de arquivo e cada pode funcionar melhor em navegadores diferentes
+            - Cada formato tem o seu proprio format('depende')
+            - Recomendado colocar diferentes formatos, para caso algum não funcione
+            */
+            src: url(fontes/Enchanted\ Land.otf) format('opentype');
+
+            
+        }
+        h1{
+            font-family: 'Indie Flower', cursive; /*Sempre colocar o tipo generico, para caso o primeiro não funcione*/
+            text-align: center;
+        }
+        h2{
+            font-family: 'Enchanted Land', cursive;
+            text-align: left;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 25px; /*Paragrafos*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando o <a href="https://fonts.google.com/" target="_blank" rel='external'>Google Fonts</a></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi excepturi aliquam sit, facilis, minima beatae ut molestias quam mollitia aspernatur quos! Laboriosam eos neque beatae, sapiente quod eligendi modi.</p>
+    <h2>Fontes externas com download</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident amet, laborum animi tempore veritatis blanditiis perspiciatis, odit adipisci magnam nam ipsam eaque voluptatem. Praesentium aperiam vitae non reprehenderit debitis?</p>
+    <p>Mais fontes para baixar: <a href="https://www.dafont.com/pt/">Dafont</a></p>
+
+    <h2>Para pegar fonte de site</h2>
+    <p>Plug in Font Ninja</p>
+        
+</body>
+</html>

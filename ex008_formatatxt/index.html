@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+</head>
+<!-- Dica
+    Exemplo escrever alguma coisa e depois querer formatar essa coisa em negrito
+    Selecina a coisa e 
+    Ctrl+Shift+P, Emmet Wrap with Abbreviation, escreve a tag desejada-->
+<body>
+    <h1>Principais formatações:</h1>
+
+        <h2>Negrito/Destaque</h2>
+            <p>Colocando o <b>termo em negrito</b>, com a tag b(não semantica) </p> <!--Não usar b(não semantico), USA strong(semantico)-->
+            <p>Colocandoo o <strong>termo em destaque</strong>, com a tag strong(semantica)</p>
+
+        <h2>Italico</h2>
+            <p>Colocando o <i>termo em italico</i>, com a tag i(sem semantica)</p>
+            <p>Colocando o <em>termo em italico</em>, com a tag em(semantica)</p>
+        
+        <h2>Texto com marcado</h2>
+            <p>Colocando <mark style="background-color: aqua;">o termo com marcação</mark></p>
+
+        <h2>Texto excluido (tachado)</h2>
+            <p>Colocando um <del>termo tachado</del>, com a tag del(semantico)</p>
+        
+        <h2>Texto inserido(sublinhado)</h2>
+            <p>Colacando um <u>termo inserido</u>(sublinhado), com a tag u(não semantico)</p>
+            <p>Colacando um <ins>termo inserido</ins>(sublinhado), com a tag ins(semantico)</p>
+
+        <h2>Texto sobrescrito</h2>
+            <p>X<sup>3</sup>+25</p>
+
+        <h2>Texto subescrito</h2>
+        <p>HSO<sub>4</sub></p>
+
+        <h2>Codigo-Fonte</h2> <!--Fonte monoespaçada, cada caracter tem o mesmo espaço-->
+            <p>Olhe a função document.getElementById('resul')(sem a tag code)</p>
+            <p>Olhe a função <code>document.getElementById('resul')</code>(com a tag code)</p>
+
+            <pre> <!--A tag pre considera tudo que esta dentro dela, inclusive tabulação-->
+                <code>
+                    for n in lista:
+                        print(x)
+                </code>
+            </pre>
+        
+        <h2>Citação Simples</h2> <!--Adiciona abas-->
+            <p>Então ele disse: <q>e eu sou o homem de ferro</q></p>
+        
+        <h2>Citação completas</h2>
+            <p>Quem é vc?
+            <blockquote cite="Colocar o link ou referencia da citação"> <!--Recuo na esquerda-->
+                Um heroi pode ser qualquer um, mesmo alguem que faça algum tão simples e reconfortante como
+                colocar um casaco nos ombros de menino, para mostra-lo que o mundo ainda não acabou
+            </blockquote></p>
+
+        <h2>Abreviações ou Siglas</h2> <!--Ao passar o mouse em cima da sigla, mostra o significado-->
+            <p>Eu amo o <abbr title="Marvel Cinematic Universe">MCU</abbr>!</p>
+</body>
+</html>
